@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+html
+{
+    color: #EEE;
+    background-color: #111;
+}
+
+#frame
+{
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    margin: auto;
+    position: fixed;
+    overflow: hidden;
+    background-color: teal;
+}
+
+@media(min-aspect-ratio: 16/9)
+{
+    #frame
+    {
+        height: 100vh;
+        width: 177.778vh;
+        font-size: 11.111vh;
+    }
+}
+
+@media(max-aspect-ratio: 16/9)
+{
+    #frame
+    {
+        width: 100vw;
+        height: 56.25vw;
+        font-size: 6.25vw;
+    }
+}
+
+canvas {
+    height: 100%;
+    position: absolute;
+    background-color: #293833;
+    image-rendering: pixelated;
+}
